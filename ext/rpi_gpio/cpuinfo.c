@@ -46,6 +46,7 @@ int get_rpi_info(rpi_info *info)
       sscanf(buffer, "Hardware	: %s", hardware);
       if (strcmp(hardware, "BCM2708") == 0 ||
           strcmp(hardware, "BCM2709") == 0 ||
+          strcmp(hardware, "BCM2711") == 0 ||
           strcmp(hardware, "BCM2835") == 0 ||
           strcmp(hardware, "BCM2836") == 0 ||
           strcmp(hardware, "BCM2837") == 0 ) {
